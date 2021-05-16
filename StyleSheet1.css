@@ -1,0 +1,91 @@
+﻿
+h4 {
+    color: white;
+}
+a {
+    color: white;
+}
+#n1 {
+    background-color:black;
+    /*background-image: url(http://localhost:56287/Images/na.jpg);*/
+    color:white;
+}
+h3 {
+    font-variant-caps: all-petite-caps;
+    text-decoration-color:#08748d;
+    color:blue;
+    font-family:'High Tower Text';
+}
+
+i {color:white;
+}
+table {
+    color: black;
+    /*z-index: 1;
+    left: 354px;
+    top: 88px;
+    position: absolute;
+    height: 95px;
+    width: 187px;*/
+}
+b:hover {
+    backface-visibility:visible;
+    background-color:ghostwhite;
+    border-color:#98a8dc;
+}
+h4 {
+    color: white;
+}
+p{color:maroon;
+    font-family:'Times New Roman';
+    font-kerning: auto;
+    font-size:20px;
+
+}
+b
+ {
+    color:brown;
+
+}
+img:hover {
+   border-color:blue;
+}
+#header {
+    background:-moz-linear-gradient(to bottom,#0a0a0a, #7a7a7a, #ccc9c9);
+}
+.ldlH {
+    color:#0c0b0b;
+    font-size:50px;
+}
+#a1 {
+  
+   background-size:cover;
+   background-color:darkgrey;
+}
+/*#head1 {
+    background-color: aqua;
+}
+#top{
+     background-color: pink;
+}*/
+#content {
+    background-image:url(Images/creativity1.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+   opacity:50;
+}
+
+
+#r1 {
+    background-size:contain;
+}
+
+#f1 {
+    color:darkblue;
+    font-family:'Comic Sans MS';
+    font-weight:200;
+    font-size:x-large;
+}
+#i5 {
+    color:darkkhaki;
+}

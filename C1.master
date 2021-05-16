@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="C1.master.cs" Inherits="C1" %>
+
+<!DOCTYPE html>
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+     <link href="StyleSheet.css" type="text/css" rel="stylesheet" />
+    <title></title>
+    <style>
+        #btnsearch
+        {
+            border-radius:20px 20px 20px 20px;
+
+        }
+        #a1
+        {
+        background: linear-gradient(white,lightblue);
+        
+        }
+       
+    </style>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+  <link rel="stylesheet" type="text/css" href="StyleSheet.css" />
+</head>
+<body>
+
+    <form id="form1" runat="server">
+        <article id="a1" style="width:1300px;height:800px; background-image:url(Images/creativity1.jpg); background-size:cover; background-repeat:no-repeat">
+      <header id="Header1"style="width:1300px; height:100px; vertical-align:central" >
+          <img src="images/chit-chat.gif" style="height: 98px; width: 180px; margin-left: 18px;"/>
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      <asp:TextBox ID="searchbox" runat="server" Width="329px" Placeholder="Find your buddies here" Font-Names="Comic Sans MS" ></asp:TextBox>
+         &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+          &nbsp<asp:Button ID="Search" runat="server"  Text="Search" OnClick="Button1_Click" Font-Bold="True"   Width="80px" height="30px" BackColor="#0099FF" BorderStyle="Solid" Font-Names="Comic Sans MS" Font-Size="Medium" />
+&nbsp;<a href="chitchathome1.aspx"style="font-family:'Comic Sans MS';color:black; font-size: medium; font-style: normal; text-transform: capitalize">&nbsp;HOME</a>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           <a href="Profile1.aspx"style="font-family:'Comic Sans MS';color:black;font-size: medium; font-style: normal; text-transform: capitalize"> &nbsp;PROFILE</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           <a href="chitchatsignin.aspx" style="font-family:'Comic Sans MS';color:black;font-size: medium; font-style: normal; text-transform: capitalize"> &nbsp;SIGNOUT</a>
+      </header>
+      <section id="content" runat="server"  style="width:1300px;height:500px">
+          <asp:ContentPlaceHolder ID="Content1" runat="server"></asp:ContentPlaceHolder></section>
+      
+  
+    </article>
+
+    </form>
+</body>
+</html>

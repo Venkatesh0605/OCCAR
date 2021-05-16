@@ -1,0 +1,32 @@
+﻿<Advertisements>
+  <Ad> 
+  <ImageUrl>Images/Audi-Lucknow-Showroom.jpg</ImageUrl>
+    <AlternateText>I1</AlternateText>
+  <Impressions>1</Impressions>
+  </Ad>
+ <Ad>
+  
+   <ImageUrl>Images/audi-city-digital-showroom-2.jpg</ImageUrl>
+   <AlternateText>I1</AlternateText>
+  <Impressions>1</Impressions>
+ </Ad>
+  <Ad>
+  <ImageUrl>Images/background.jpg</ImageUrl>
+    <AlternateText>I1</AlternateText>
+    
+    
+  <Impressions>1</Impressions> </Ad>
+  <Ad>
+  
+   <ImageUrl>Images/Showroomcar1.jpg</ImageUrl>
+   <AlternateText>I1</AlternateText>
+  <Impressions>1</Impressions>
+ </Ad>
+<Ad>
+  
+   <ImageUrl>Images/car_showrooms_1478.jpg</ImageUrl>
+   <AlternateText>I1</AlternateText>
+  <Impressions>1</Impressions>
+ </Ad>
+
+</Advertisements>

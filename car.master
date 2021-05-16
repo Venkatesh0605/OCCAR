@@ -1,0 +1,124 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="car.master.cs" Inherits="car" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head  runat="server">
+    <link rel="stylesheet" type="text/css" href="StyleSheet1.css" />
+    <link href="Images/vw.jpg" />
+    
+    <%--<asp:Image ID="slideshow" runat="server"  width="637px" height="225px"/>--%>
+    <title>OOCAR</title>
+       
+    <script type="text/javascript">
+
+        var img1 = document.getElementById("back");
+
+        var imgarray1 = ["Img/chitchat10.jpg", "Img/chitchat11.png", "Img/chitchat3.jpg"];
+
+        var imgindex1 = 0
+
+        function f2() {
+
+            back.setAttribute("src", imgarray1[imgindex1])
+
+            if (imgindex1 < imgarray1.length - 1)
+
+                imgindex1++;
+
+            else
+
+                imgindex1 = 0;
+
+        }
+
+        setInterval("f2()", 2000);
+       
+ </script>
+   <script type="text/javascript">
+
+       var img = document.getElementById("h");
+
+       var imgarray = ["Images/header.jpg", "Images/header2.jpg", "Images/header3.jpg", "Images/header4.jpg", "Images/q1.jpg"];
+
+       var imgindex = 0
+
+       function f() {
+
+           h.setAttribute("src", imgarray[imgindex])
+
+           if (imgindex < imgarray.length - 1)
+
+               imgindex++;
+
+           else
+
+               imgindex = 0;
+
+       }
+
+       setInterval("f()", 1500);
+
+    </script>
+     
+       
+    <style>
+        #c1, #r1 {
+            background:linear-gradient(lightblue,lightpink);
+            
+        }
+    </style>
+  
+      <asp:ContentPlaceHolder id="head" runat="server">
+   
+    </asp:ContentPlaceHolder>
+       
+  
+</head>
+<body>
+   <form id="form1" runat="server">
+    <article id="a1" style="width:1250px; height:680px; float:left">
+       
+         <header id="h1" style="width:1250px; height:100px; /*background-color:pink;*/">
+                   <span style="height:100px;width:750px">
+        <img src="Images/s.png" style="width:199px; height:100px;float:left" />
+      <img  src="Images/q1.jpg" style="width:1048px; height:100px;float:left"id ="h" />
+        
+        
+    </span>
+             <%--<img src="Images/classic-racing-cars-1080p-62.jpg" alt="Headerimage"  style ="width:1250px; height:225px;float:left;" />--%>
+             &nbsp;</header>
+
+
+        <nav id="n1" style="width:1250px; height:20px;"><asp:ContentPlaceHolder ID="nav1" runat="server"></asp:ContentPlaceHolder>
+          <i> <a href="HomePage.aspx">Home</a></i>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i><a href="Searchpage.aspx">Search Cars</a></i>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i><a href="signin.aspx">Do Test Drive</a></i>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i><a href="signin.aspx">Buy A Car</a></i>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i><a href="adminsignin.aspx"> Admin</a></i>
+            </nav>
+
+
+
+        <section id="c1" style="width:995px; height:520px; float:left; background-image:url('Images/drifting-car-blue-image.jpg'); background-repeat:no-repeat;background-size:cover; margin-right: 0px;"> 
+          <asp:ContentPlaceHolder ID="content" runat="server">
+                 </asp:ContentPlaceHolder>
+        </section>
+
+
+
+           
+               <a href="Chitchatsignin.aspx">   <img src="Img/chitchat3.jpg" style="width:250px;height:520px; margin-top: 0px; float:right" id ="back"/></a>
+             
+           
+
+
+
+       <footer id="f1" style="width:1250px; height:40px;">
+           <div style="width:1250px; height:40px;">
+               <img src="Images/na.jpg" alt="Footer image" style="width:1250px; height:40px;" /></div>    
+           
+           <center><i id="i1">@ownacar pvt.Limited  Add:ST.Road, Chennai, TAMILNADU Registered in INDIA No: 1672070 </i>  </center>      
+            <audio src="Car sound.wav" autoplay="autoplay"></audio>
+           </footer>
+
+    </article>
+    </form>
+</body>
+</html>
